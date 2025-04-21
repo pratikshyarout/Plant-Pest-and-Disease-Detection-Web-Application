@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login | AI Crop Doctor</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0fff4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #2f855a;
+      margin-bottom: 1.5rem;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #c6f6d5;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    button {
+      width: 100%;
+      background-color: #2f855a;
+      color: white;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #276749;
+    }
+
+    .google-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      width: 100%;
+      padding: 0.75rem;
+      background-color: #ffffff;
+      border: 1px solid #cbd5e0;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: bold;
+      margin-top: 1rem;
+      cursor: pointer;
+      color: #444;
+      transition: background-color 0.2s, color 0.2s;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .google-btn:hover {
+      background-color: #f1f1f1;
+      color: #111;
+    }
+
+    .google-btn img {
+      height: 20px;
+      width: 20px;
+    }
+
+    .signup-link {
+      text-align: center;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+    }
+
+    .signup-link a {
+      color: #2b6cb0;
+      text-decoration: none;
+    }
+
+    .signup-link a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>🔐 Login to AI Crop Doctor</h2>
+    <form onsubmit="login(event)">
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Password" required />
+      <button type="submit">Login</button>
+    </form>
+
+    <button type="button" class="google-btn" onclick="googleLogin()">
+      <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Google" />
+      Continue with Google
+    </button>
+
+    <div class="signup-link">
+      Don't have an account? <a href="signup.html">Sign up</a>
+    </div>
+  </div>
+
+  <script>
+    function login(e) {
+      e.preventDefault();
+      alert("Login successful (demo only). Redirecting to home...");
+      window.location.href = "index.html";
+    }
+
+    function googleLogin() {
+      alert("Google login successful (demo only). Redirecting to home...");
+      window.location.href = "/";
+    }
+  </script>
+</body>
+</html>

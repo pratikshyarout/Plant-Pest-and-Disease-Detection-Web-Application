@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Help & Support | AI Crop Doctor</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0fdf4;
+      color: #2d3748;
+    }
+
+    header {
+      background-color: #2f855a;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    .help-container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #2f855a;
+    }
+
+    details {
+      margin-bottom: 1rem;
+      border: 1px solid #c6f6d5;
+      border-radius: 8px;
+      padding: 1rem;
+      background-color: #f0fff4;
+    }
+
+    summary {
+      font-size: 1.1rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    summary::-webkit-details-marker {
+      color: #2f855a;
+    }
+
+    p {
+      margin-top: 0.5rem;
+    }
+
+    .contact {
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 2px dashed #c6f6d5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      background-color: #edf2f7;
+      color: #4a5568;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">🌿 AI Crop Doctor</div>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/upload">Upload</a>
+      <a href="/history">History</a>
+      <a href="/help">Help</a>
+      <a href="/login">Login</a>
+    </nav>
+  </header>
+
+  <div class="help-container">
+    <h2>❓ Help & FAQs</h2>
+
+    <details>
+      <summary>📸 How should I take the photo of my crop?</summary>
+      <p>Make sure the affected area (leaves/stem/fruit) is in focus. Good lighting and close-up images work best.</p>
+    </details>
+
+    <details>
+      <summary>⚠️ I uploaded an image but got "Couldn’t Analyze Image". Why?</summary>
+      <p>This can happen if the image is too blurry, doesn't contain visible crop parts, or isn't of a supported plant. Try retaking the photo.</p>
+    </details>
+
+    <details>
+      <summary>💡 What kind of diseases or pests can be detected?</summary>
+      <p>The AI currently supports major diseases for tomato, potato, brinjal, and chili plants. More crops will be supported soon!</p>
+    </details>
+
+    <details>
+      <summary>📥 Can I download my results?</summary>
+      <p>Yes! In the History section, you can click the "Download" button next to any result to save it as a report.</p>
+    </details>
+
+    <details>
+      <summary>🧪 Is this a certified diagnosis?</summary>
+      <p>This is an AI-powered assistant tool. For confirmed diagnoses, consult a certified agronomist or plant pathologist.</p>
+    </details>
+
+    <div class="contact">
+      <h3>📞 Still need help?</h3>
+      <p>Feel free to contact our support team at <strong>support@aicropdoctor.com</strong></p>
+      <p>We typically respond within 24 hours.</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 AI Crop Doctor. Helping Farmers Grow Better.
+  </footer>
+
+</body>
+</html>

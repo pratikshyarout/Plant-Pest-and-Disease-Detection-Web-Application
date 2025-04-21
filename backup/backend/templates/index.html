@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Crop Doctor - Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #f0f9f4;
+      color: #2e3d27;
+    }
+
+    header {
+      background-color: #2f855a;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    .hero {
+      padding: 4rem 2rem;
+      text-align: center;
+      background: url('https://images.unsplash.com/photo-1524594227084-d763e5e8125c') no-repeat center center/cover;
+      color: white;
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      backdrop-filter: brightness(0.5);
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero button {
+      padding: 0.8rem 2rem;
+      background-color: #38a169;
+      border: none;
+      color: white;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .hero button:hover {
+      background-color: #2f855a;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #edf2f7;
+      color: #555;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">🌿 AI Crop Doctor</div>
+    <nav>
+      <a href="/">Home</a>
+<a href="/upload">Upload</a>
+<a href="/history">History</a>
+<a href="/help">Help</a>
+<a href="/login">Login</a>
+<a href="/signup">Signup</a>
+
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>AI-Powered Pest & Disease Detection</h1>
+    <p>Identify plant problems in seconds. Just upload a photo — let AI do the rest!</p>
+    <button onclick="goToUpload()">Get Started</button>
+  </section>
+
+  <footer>
+    &copy; 2025 AI Crop Doctor. Empowering Farmers with Technology.
+  </footer>
+
+  <script>
+    function goToUpload() {
+      window.location.href = '/upload';
+    }
+  </script>
+
+</body>
+</html>
