@@ -1,2 +1,1 @@
-# Trying again 🚀
-# Trying again 🚀
+This is a full stack project for the detection of plant pest and disease using machine learning, and for frontent HTML, CSS, JS is used along with python and Fetch API for the backend. OpenCV, TensorFlow, Keras, numpy has used for deep vision.
