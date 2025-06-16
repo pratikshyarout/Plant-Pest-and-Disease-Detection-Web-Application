@@ -21,8 +21,8 @@ An AI-powered web application that detects plant pests and diseases from leaf im
 |------------|---------------------------------|
 | Frontend   | HTML, CSS, JavaScript           |
 | Backend    | Flask (Python)                  |
-| Model      | Custom CNN (TensorFlow/Keras)   |
-| Deployment | Docker, GitHub Actions/Jenkins  |
+| Model      | Custom CNN TensorFlow           |
+| Deployment | Docker, GitHub Actions          |
 ![Screenshot (12)](https://github.com/user-attachments/assets/7819d4dd-8620-466c-b5ae-caa3870c77ce)
 
 
